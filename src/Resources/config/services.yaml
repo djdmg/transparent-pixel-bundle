@@ -1,7 +1,15 @@
 services:
-  Djdmg\TransparentPixelBundle\:
-    resource: '../../*'
-    exclude: '../../{Entity,Resources,Tests}'
 
-  Djdmg\TransparentPixelBundle\Twig\PixelExtension:
-    tags: ['twig.extension']
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+    # Charge tous les services du bundle (contrôleurs, services, repositories, twig...)
+    Djdmg\TransparentPixelBundle\:
+      resource: '../../*'
+      exclude: '../../{Entity,Resources,Tests}'
+
+    # (Optionnel car autoconfigure le ferait déjà, mais on garde explicite)
+    Djdmg\TransparentPixelBundle\Twig\PixelExtension:
+      tags: [ 'twig.extension' ]
