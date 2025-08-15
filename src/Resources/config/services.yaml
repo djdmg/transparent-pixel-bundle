@@ -1,0 +1,7 @@
+services:
+  Djdmg\TransparentPixelBundle\:
+    resource: '../../*'
+    exclude: '../../{Entity,Resources,Tests}'
+
+  Djdmg\TransparentPixelBundle\Twig\PixelExtension:
+    tags: ['twig.extension']

@@ -1,0 +1,23 @@
+{
+  "name": "djdmg/transparent-pixel-bundle",
+  "type": "symfony-bundle",
+  "description": "Transparent tracking pixel for Symfony 7 (log IP/OS/Browser/UA/headers/query/cookies).",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "symfony/framework-bundle": "^7.0",
+    "symfony/twig-bundle": "^7.0",
+    "symfony/dependency-injection": "^7.0",
+    "symfony/config": "^7.0",
+    "doctrine/orm": "^3.0",
+    "doctrine/doctrine-bundle": "^2.13",
+    "ua-parser/uap-php": "^3.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Djdmg\\TransparentPixelBundle\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
