@@ -1,15 +1,20 @@
+# src/Resources/config/services.yaml
 services:
-
   _defaults:
     autowire: true
     autoconfigure: true
     public: false
 
-    # Charge tous les services du bundle (contrôleurs, services, repositories, twig...)
-    Djdmg\TransparentPixelBundle\:
-      resource: '../../*'
-      exclude: '../../{Entity,Resources,Tests}'
+  # Charge tous les services du bundle (controllers, services, twig, etc.)
+  Djdmg\TransparentPixelBundle\:
+    resource: '../../*'
+    exclude: '../../{DependencyInjection,Entity,Resources,Tests}'
 
-    # (Optionnel car autoconfigure le ferait déjà, mais on garde explicite)
-    Djdmg\TransparentPixelBundle\Twig\PixelExtension:
-      tags: [ 'twig.extension' ]
+  # (Optionnel: autoconfigure tag automatiquement si la classe étend \Twig\Extension\AbstractExtension)
+  Djdmg\TransparentPixelBundle\Twig\PixelExtension:
+    tags: ['twig.extension']
+
+  # (Optionnel) Controllers: utile si tu veux forcer le tag controller.service_arguments
+  Djdmg\TransparentPixelBundle\Controller\:
+    resource: '../../Controller/'
+    tags: ['controller.service_arguments']
