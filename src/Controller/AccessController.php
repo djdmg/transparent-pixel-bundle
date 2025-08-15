@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Djdmg\TransparentPixelBundle\Controller;
 
-use App\TrackingPixel\Repository\PixelHitRepository;
-use App\TrackingPixel\Repository\PixelRepository;
+use Djdmg\TransparentPixelBundle\Repository\PixelHitRepository;
+use Djdmg\TransparentPixelBundle\Repository\PixelRepository;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Attribute\Route;

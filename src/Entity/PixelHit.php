@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace Djdmg\TransparentPixelBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use App\TrackingPixel\Repository\PixelHitRepository;
+use Djdmg\TransparentPixelBundle\Repository\PixelHitRepository;
 
 #[ORM\Entity(repositoryClass: PixelHitRepository::class)]
 #[ORM\Table(name: 'tp_pixel_hit', indexes: [

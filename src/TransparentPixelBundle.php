@@ -1,7 +1,7 @@
 <?php
 
 
-namespace DimG\TransparentPixelBundle;
+namespace Djdmg\TransparentPixelBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

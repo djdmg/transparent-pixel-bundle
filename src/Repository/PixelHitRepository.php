@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Djdmg\TransparentPixelBundle\Repository;
 
-use App\TrackingPixel\Entity\Pixel;
-use App\TrackingPixel\Entity\PixelHit;
+use Djdmg\TransparentPixelBundle\Entity\Pixel;
+use Djdmg\TransparentPixelBundle\Entity\PixelHit;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 

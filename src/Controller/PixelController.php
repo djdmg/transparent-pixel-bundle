@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Djdmg\TransparentPixelBundle\Controller;
 
-use App\TrackingPixel\Entity\PixelHit;
-use App\TrackingPixel\Repository\PixelRepository;
-use App\TrackingPixel\Service\UserAgentParser;
+use Djdmg\TransparentPixelBundle\Entity\PixelHit;
+use Djdmg\TransparentPixelBundle\Repository\PixelRepository;
+use Djdmg\TransparentPixelBundle\Service\UserAgentParser;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

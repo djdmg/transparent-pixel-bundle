@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 namespace Djdmg\TransparentPixelBundle\Service;
 
-use App\TrackingPixel\Entity\Pixel;
-use App\TrackingPixel\Repository\PixelHitRepository;
-use App\TrackingPixel\Repository\PixelRepository;
+use Djdmg\TransparentPixelBundle\Entity\Pixel;
+use Djdmg\TransparentPixelBundle\Repository\PixelHitRepository;
+use Djdmg\TransparentPixelBundle\Repository\PixelRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 

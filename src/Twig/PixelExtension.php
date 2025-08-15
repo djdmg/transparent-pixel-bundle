@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace App\TrackingPixel\Twig;
+namespace Djdmg\TransparentPixelBundle\Twig;
 
-use App\TrackingPixel\Entity\Pixel;
-use App\TrackingPixel\Service\PixelManager;
+use Djdmg\TransparentPixelBundle\Entity\Pixel;
+use Djdmg\TransparentPixelBundle\Service\PixelManager;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
