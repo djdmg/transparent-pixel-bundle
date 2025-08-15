@@ -14,13 +14,6 @@ final class TransparentPixelBundle extends Bundle
     {
         parent::build($container);
 
-        if (class_exists(DoctrineOrmMappingsPass::class)) {
-            $mappings = [
-                __DIR__.'/Entity' => 'Djdmg\\TransparentPixelBundle\\Entity',
-            ];
-            $container->addCompilerPass(
-                DoctrineOrmMappingsPass::createAttributeMappingDriver($mappings)
-            );
-        }
+
     }
 }
