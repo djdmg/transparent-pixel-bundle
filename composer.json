@@ -1,16 +1,17 @@
 {
   "name": "djdmg/transparent-pixel-bundle",
+  "description": "Symfony bundle that provides a 1×1 transparent tracking pixel for pages and emails; logs IP/UA/OS/browser/device and more.",
   "type": "symfony-bundle",
-  "description": "Transparent tracking pixel for Symfony 7 (log IP/OS/Browser/UA/headers/query/cookies).",
   "license": "MIT",
+  "keywords": ["symfony", "bundle", "tracking", "pixel", "transparent", "analytics", "twig", "email"],
+  "homepage": "https://github.com/djdmg/transparent-pixel-bundle",
+  "readme": "README.md",
   "require": {
-    "php": "^8.2",
-    "symfony/framework-bundle": "^7.0",
-    "symfony/twig-bundle": "^7.0",
-    "symfony/dependency-injection": "^7.0",
-    "symfony/config": "^7.0",
-    "doctrine/orm": "^3.0",
-    "doctrine/doctrine-bundle": "^2.13",
+    "php": "^8.1",
+    "symfony/framework-bundle": "^6.4 || ^7.0",
+    "symfony/twig-bundle": "^6.4 || ^7.0",
+    "doctrine/doctrine-bundle": "^2.8",
+    "doctrine/orm": "^2.15 || ^3.0",
     "ua-parser/uap-php": "^3.9"
   },
   "autoload": {
@@ -18,6 +19,8 @@
       "Djdmg\\TransparentPixelBundle\\": "src/"
     }
   },
-  "minimum-stability": "stable",
-  "prefer-stable": true
+  "support": {
+    "issues": "https://github.com/djdmg/transparent-pixel-bundle/issues",
+    "source": "https://github.com/djdmg/transparent-pixel-bundle"
+  }
 }
