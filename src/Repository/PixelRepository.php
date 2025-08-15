@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Djdmg\TransparentPixelBundle\Repository;
 
-use App\TrackingPixel\Entity\Pixel;
+use Djdmg\TransparentPixelBundle\Entity\Pixel;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
